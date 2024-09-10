@@ -136,6 +136,9 @@ article img:hover {
   margin-bottom: 20px;
 }
 
+article {
+  margin-top: 20px;
+}
 article p {
   padding: 20px;
 }
@@ -201,4 +204,86 @@ footer {
 /* Hover effect on the scrollbar handle */
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--orange); /* Change color when hovered */
+}
+
+/* about us styles */
+
+.story {
+  margin: 40px;
+  padding: 10px;
+}
+
+.story-img {
+  width: 50%;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+/* Contact Us Page Styles */
+
+/* Main container for the contact page */
+.contact {
+  max-width: 600px;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: var(--lightGreen);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px var(--orange);
+}
+
+/* Contact form title */
+.contact h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--green);
+}
+
+/* Styling for form elements */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Labels */
+.contact label {
+  font-weight: 600;
+  color: var(--green);
+}
+
+/* Input and textarea styling */
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border: 1px solid var(--green);
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+/* Submit button styling */
+.contact button {
+  background-color: var(--green);
+  color: var(--white);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: var(--orange);
+  color: var(--green);
+  font-weight: 700;
+}
+
+/* Form response message styling */
+#formResponse {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: var(--green);
 }

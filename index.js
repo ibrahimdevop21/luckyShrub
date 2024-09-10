@@ -26,3 +26,31 @@ articles.forEach((article) => {
 });
 
 document.getElementById().textContent = new Date().getFullYear();
+
+// contact us
+document
+  .getElementById('contactForm')
+  .addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent default form submission
+
+    const form = event.target;
+    const formData = new FormData(form);
+
+    fetch('https://formspree.io/f/your-form-id', {
+      method: 'POST',
+      body: formData,
+      headers: {
+        Accept: 'application/json',
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        document.getElementById('formResponse').innerText =
+          'Thank you for your message! We will get back to you soon.';
+        form.reset(); // Clear form fields
+      })
+      .catch((error) => {
+        document.getElementById('formResponse').innerText =
+          'Sorry, something went wrong. Please try again.';
+      });
+  });

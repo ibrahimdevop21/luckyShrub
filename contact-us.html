@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Lucky Shrub</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <img
+        src="./Lucky-Shrub-logos/Asset 3@3x.png"
+        alt="Lucky Shrub Logo"
+        class="logo"
+      />
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+      <ul>
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./plants.html">PLANTS</a></li>
+        <li><a href="./about-us.html">ABOUT US</a></li>
+        <li><a href="./contact-us.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+      <section class="container">
+        <article class="contact">
+          <h1>Contact Us</h1>
+          <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+          <div id="formResponse"></div>
+        </article>
+        <article>
+          <h2>Visit Us</h2>
+          <p>
+            Feel free to drop by our office to discuss your garden design needs
+            or to explort our nursery. Our office hours are:
+          </p>
+          <ul>
+            <li><strong>Monday-Friday:</strong> 9:00 AM - 5:00 PM</li>
+            <li><strong>Saturday:</strong> 10:00 AM - 3:00pm</li>
+            <li><strong>Sunday:</strong> Closed</li>
+          </ul>
+          <br />
+          <h2>Follow Us</h2>
+          <p>
+            Stay updated with our latest project and offerings by following us
+            on social media:
+          </p>
+          <ul>
+            <li>
+              <a href="#facebook"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#instagram"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#X"><i class="fa-brands fa-square-x-twitter"></i></a>
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-logo">
+          <img
+            src="./Lucky-Shrub-logos/Asset 3@3x.png"
+            alt="Lucky Shrub Logo"
+            class="logo"
+          />
+        </div>
+      </div>
+      <div class="content">
+        All Rights Reserved ibrahimdevopo21 &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="index.js"></script>
+  </body>
+</html>
