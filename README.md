@@ -53,10 +53,12 @@ The primary goal of the project was to create a fully responsive, visually appea
 ---
 
 ## How to Use
+Visit the live page [here](https://ibrahimdevop21.github.io/luckyShrub/index.html) or :
 
 1. Clone or download the repository.
 2. Open the `index.html` file in any modern web browser.
 3. Explore the different pages and responsive features by resizing the browser window.
+   
 
 ---
 
