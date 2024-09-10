@@ -27,10 +27,10 @@
     <!-- Navigation Bar -->
     <nav>
       <ul>
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#plants">PLANTS</a></li>
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./plants.html">PLANTS</a></li>
         <li><a href="./about-us.html">ABOUT US</a></li>
-        <li><a href="#gallery">GALLERY</a></li>
+        <li><a href="./gallery.html">GALLERY</a></li>
       </ul>
     </nav>
 
@@ -47,7 +47,11 @@
             personal oasis with our comprehensive design and hands-on services.
           </p>
         </article>
-        <img src="./img/landscape.jpg" alt="plant nursery and landscaping" />
+        <img
+          src="./img/landscape.jpg"
+          alt="plant nursery and landscaping"
+          class="hero-img"
+        />
       </section>
       <section class="info">
         <article>
@@ -100,12 +104,10 @@
           />
         </div>
       </div>
-      <div class="content">
-        All Rights Reserved ibrahimdevopo21 &copy
-        <script>
-          document.write(new Date().getFullYear());
-        </script>
-      </div>
+      <p class="content">
+        All Rights Reserved ibrahimdevopo21 &copy;
+        <span id="currentYear"></span>
+      </p>
     </footer>
 
     <!-- Script link -->
