@@ -11,30 +11,22 @@
   --orange: rgb(255, 145, 0);
 }
 
-body {
+body,
+html {
   background-color: var(--white);
   font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-h2 {
-  font-size: 1.6rem;
-  font-weight: 600;
-  margin-bottom: 0.75rem;
-  text-align: center;
-}
-
+/* Header styles */
 header {
   background-color: var(--green);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem; /* Increased padding for more white space */
 }
 
 header img {
@@ -42,11 +34,13 @@ header img {
   height: auto;
 }
 
+/* Navigation Bar styles */
 nav {
   background-color: var(--lightGreen);
   padding: 2rem;
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 2rem; /* Adds space below navigation */
 }
 
 nav ul {
@@ -74,18 +68,20 @@ nav ul li a:hover {
   box-shadow: 0 8px 16px var(--orange);
 }
 
+/* Main content styles */
 section {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 20px;
+  padding: 40px; /* Increased padding inside sections */
   justify-content: space-around;
+  margin-bottom: 40px; /* Space below sections */
 }
 
 article {
   flex: 1 1 calc(33.333% - 40px);
   background-color: var(--lightGreen);
-  padding: 20px;
+  padding: 30px; /* Increased internal padding */
   border-radius: 15px;
   color: var(--green);
   display: flex;
@@ -95,6 +91,7 @@ article {
   box-shadow: 0 4px 8px var(--orange);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   perspective: 1000px;
+  margin: 20px; /* Increased spacing around articles */
 }
 
 article:hover {
@@ -107,6 +104,7 @@ article img {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   transform-origin: center;
   perspective: 1000px;
+  margin-bottom: 20px; /* Adds space below images */
 }
 
 .hero-img:hover,
@@ -119,11 +117,9 @@ article img:hover {
   display: flex;
   gap: 20px;
   background-color: var(--lightGreen);
-  padding: 2%;
+  padding: 3rem; /* Increased padding for more space */
   border-radius: 15px;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 20px auto; /* Center and increase space around section */
 }
 
 .promotion img {
@@ -133,12 +129,9 @@ article img:hover {
 }
 
 .info {
-  margin-bottom: 20px;
+  margin-bottom: 40px; /* Adds space at the bottom of the info section */
 }
 
-article {
-  margin-top: 20px;
-}
 article p {
   padding: 20px;
 }
@@ -147,19 +140,18 @@ article p {
   width: 100%;
   max-width: 280px;
   border-radius: 15px;
+  margin-bottom: 20px; /* Adds space below images in articles */
 }
 
+/* Footer styles */
 footer {
   background-color: var(--green);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.2rem;
+  padding: 1rem 40px; /* Adds more padding inside the footer */
   color: var(--white);
-  margin-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
+  margin-top: 40px; /* Adds space above footer */
 }
 
 .footer-logo img {
@@ -167,93 +159,45 @@ footer {
   height: auto;
   margin: 5px;
 }
+
 .content {
   color: var(--white);
 }
 
-@media (max-width: 768px) {
-  article {
-    flex: 1 1 100%;
-    margin-bottom: 20px;
-  }
-
-  section {
-    flex-direction: column;
-    align-items: center;
-  }
+h1,
+h2 {
+  margin-bottom: 2rem; /* Increase space below headings */
+  margin-top: 2rem; /* Increase space above headings */
+  text-align: center;
 }
 
-/* Scrollbar styling for WebKit browsers */
-::-webkit-scrollbar {
-  width: 12px; /* Width of the scrollbar */
-}
-
-/* Track (background of the scrollbar) */
-::-webkit-scrollbar-track {
-  background: var(--lightGreen); /* Lighter background for the track */
-  border-radius: 10px;
-}
-
-/* Handle (the draggable part of the scrollbar) */
-::-webkit-scrollbar-thumb {
-  background-color: var(--green); /* Color of the scrollbar handle */
-  border-radius: 10px;
-  border: 3px solid var(--lightGreen); /* Space around the handle */
-}
-
-/* Hover effect on the scrollbar handle */
-::-webkit-scrollbar-thumb:hover {
-  background-color: var(--orange); /* Change color when hovered */
-}
-
-/* about us styles */
-
-.story {
-  margin: 40px;
-  padding: 10px;
-}
-
-.story-img {
-  width: 50%;
-  border-radius: 10px;
-  margin: 10px;
-}
-
-/* Contact Us Page Styles */
-
-/* Main container for the contact page */
+/* Contact Page styles */
 .contact {
   max-width: 600px;
-  margin-top: 40px;
-  margin-left: 40px;
-  margin-bottom: 40px;
+  margin: 40px auto; /* Center and increase margin */
   padding: 20px;
   background-color: var(--lightGreen);
   border-radius: 15px;
   box-shadow: 0 4px 8px var(--orange);
 }
 
-/* Contact form title */
 .contact h1 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem; /* More space below the heading */
   color: var(--green);
 }
 
-/* Styling for form elements */
 .contact form {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-/* Labels */
 .contact label {
   font-weight: 600;
   color: var(--green);
 }
 
-/* Input and textarea styling */
 .contact input,
 .contact textarea {
   padding: 10px;
@@ -263,7 +207,6 @@ footer {
   width: 100%;
 }
 
-/* Submit button styling */
 .contact button {
   background-color: var(--green);
   color: var(--white);
@@ -281,9 +224,41 @@ footer {
   font-weight: 700;
 }
 
-/* Form response message styling */
 #formResponse {
   margin-top: 10px;
   font-size: 1rem;
   color: var(--green);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  article {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Scrollbar styling for WebKit browsers */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--lightGreen);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--green);
+  border-radius: 10px;
+  border: 3px solid var(--lightGreen);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--orange);
 }
